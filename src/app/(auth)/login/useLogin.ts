@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Cookies from "js-cookie";
 import { loginSchema, LoginFormValues } from "./login.schema";
+import { logger } from "@/utils/logger";
 
 export const useLogin = () => {
   const router = useRouter();
@@ -18,6 +19,7 @@ export const useLogin = () => {
   });
 
   const onSubmit = (data: LoginFormValues) => {
+    logger.log("form", data);
     setIsLoading(true);
 
     // masih pass untuk set cookie token

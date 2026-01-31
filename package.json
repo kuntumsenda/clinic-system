@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "cross-env NODE_ENV=development next dev",
+    "dev:local": "cross-env NODE_ENV=development NEXT_PUBLIC_ENV=local next dev",
+    "build:staging": "cross-env NODE_ENV=production NEXT_PUBLIC_ENV=staging next build",
+    "build:prod": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -15,6 +17,7 @@
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cross-env": "^10.1.0",
     "graphql": "^16.12.0",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.563.0",
