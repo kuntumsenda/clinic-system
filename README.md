@@ -14,7 +14,7 @@ Gunakan akun berikut untuk mengakses dashboard:
 ## 🛠 Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
-- **State & Data Fetching**: TanStack Query (React Query) & GraphQL Request
+- **State & Data Fetching**: TanStack Query (React Query) & GraphQL Request & Zustand
 - **Styling**: Tailwind CSS & Shadcn UI
 - **API Mocking**: MSW (Mock Service Worker)
 - **Date Handling**: date-fns
