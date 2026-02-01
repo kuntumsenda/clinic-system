@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
-import { useLogin } from "./useLogin";
+import { useLogin } from "../../../hooks/auth/useLogin";
 import { IField } from "@/components/shared/form/IField";
 
 export default function LoginPage() {

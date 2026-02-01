@@ -1,5 +1,6 @@
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
-import { ApolloWrapper } from "@/lib/apollo-provider";
+import { QueryProvider } from "@/components/providers/QueryProvider";
 
 export default function RootLayout({
   children,
@@ -8,8 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body>
-        <ApolloWrapper>{children}</ApolloWrapper>
+      <body className="antialiased">
+        <QueryProvider>{children}</QueryProvider>
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
