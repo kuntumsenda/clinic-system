@@ -32,12 +32,12 @@ cd clinic-system
 npm install
 ```
 
-# Endpoint GraphQL (Diarahkan ke internal API untuk disimulasikan oleh MSW buat file .env.local)
+## Endpoint GraphQL (Diarahkan ke internal API untuk disimulasikan oleh MSW buat file .env.local)
 
 NODE_ENV=development
 NEXT_PUBLIC_API_URL=https://api-dev.rata.id/v1/graphql
 
-# Run Project
+## Run Project
 
 ```bash
 npm run dev
